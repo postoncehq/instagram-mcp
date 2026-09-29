@@ -15,6 +15,8 @@ Claude: Wrote the caption with the instagram-caption-generator skill: hook on
         the post is live.
 ```
 
+Full setup guide with examples: [postonce.to/mcp/instagram](https://postonce.to/mcp/instagram)
+
 ## What you can do
 
 | Ask your agent to | How it works |
