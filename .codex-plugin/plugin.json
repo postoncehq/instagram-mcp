@@ -1,0 +1,23 @@
+{
+  "name": "instagram-mcp",
+  "version": "0.1.0",
+  "description": "Instagram MCP server and skills: write, publish and schedule Instagram posts, carousels and Reels through Instagram's official API, via PostOnce.",
+  "author": {
+    "name": "PostOnce"
+  },
+  "homepage": "https://github.com/postoncehq/instagram-mcp",
+  "skills": "./skills/",
+  "mcpServers": "./codex.mcp.json",
+  "interface": {
+    "displayName": "Instagram MCP",
+    "shortDescription": "Write, publish and schedule Instagram posts and Reels.",
+    "longDescription": "Caption, carousel, Reel script, bio, hashtag and content calendar skills, plus publishing and scheduling to Instagram Business and Creator accounts through Instagram's official API via PostOnce. Publishing goes through Instagram's official API, via PostOnce.",
+    "developerName": "PostOnce",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": "Write a caption for these photos and schedule them as an Instagram carousel for Friday at noon."
+  }
+}

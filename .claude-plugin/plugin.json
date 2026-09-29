@@ -1,0 +1,19 @@
+{
+  "name": "instagram-mcp",
+  "version": "0.1.0",
+  "description": "Instagram MCP server and skills: write, publish and schedule Instagram posts, carousels and Reels through Instagram's official API, via PostOnce.",
+  "author": {
+    "name": "PostOnce",
+    "url": "https://postonce.to"
+  },
+  "homepage": "https://github.com/postoncehq/instagram-mcp",
+  "repository": "https://github.com/postoncehq/instagram-mcp",
+  "license": "MIT",
+  "keywords": [
+    "instagram",
+    "instagram-mcp",
+    "mcp",
+    "social-media",
+    "postonce"
+  ]
+}
