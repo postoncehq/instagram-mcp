@@ -29,11 +29,12 @@ Full setup guide with examples: [postonce.to/mcp/instagram](https://postonce.to/
 | Save a draft to finish later | `create_draft` |
 | Check whether a post went out, and get its URL | `get_post` |
 | Change or cancel a scheduled post | `update_post`, `cancel_post` |
+| See views, likes, comments, shares and saves for your posts | `get_analytics`, `get_post_analytics` |
 | Post the same thing to Instagram and other platforms | Add more targets to `create_post` (TikTok, YouTube, Facebook, LinkedIn, X, Threads, Pinterest, Bluesky) |
 
 Captions go up to 2,200 characters. Images are published as JPEG, up to 8 MB, between 4:5 portrait and 1.91:1 landscape.
 
-Not supported: Stories, text-only posts, collaborators, user tags, location, alt text, first comments, analytics, reading or replying to comments, DMs, and editing or deleting posts that are already live. This server publishes; it doesn't browse Instagram for you.
+Not supported: Stories, text-only posts, collaborators, user tags, location, alt text, first comments, reading or replying to comments, DMs, and editing or deleting posts that are already live. This server publishes; it doesn't browse Instagram for you.
 
 ## Setup (about a minute)
 
@@ -78,13 +79,13 @@ Step-by-step: [Claude Code](https://postonce.to/integrations/claude-code) · [Co
 ## FAQ
 
 **Does Instagram have an official MCP server?**
-This server uses Instagram's official API through PostOnce. You connect your account once with Instagram's own login, and your agent publishes through that connection.
+Not for posting. As of November 2026, Meta's official MCP servers cover ads, developer tools and WhatsApp Business. With this server, PostOnce publishes your Instagram posts through Instagram's official posting API. You connect your account once with Instagram's own login.
 
 **Can Claude post to Instagram?**
 Yes, once it's connected to an MCP server that can publish, like this one. Claude writes the caption, uploads your photos or video, then calls `create_post`.
 
 **Is it safe for my Instagram account?**
-Yes. Posts go through Instagram's official API with the permissions you grant when you connect. Many Instagram MCP servers on GitHub drive a logged-in browser session or an unofficial, reverse-engineered API instead, which Instagram's Terms of Use don't allow and which can get accounts restricted.
+Yes. Posts go through Instagram's official posting API with the permissions you grant when you connect. There's no scraping and no browser session, and you can revoke access any time.
 
 **Can it post Reels and carousels?**
 Yes. One video publishes as a Reel (3 seconds to 15 minutes, up to 1 GB), and you can set its cover image. Carousels take 2 to 10 photos or videos, mixed; carousel videos must be 3 to 60 seconds.
